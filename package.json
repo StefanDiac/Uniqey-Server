@@ -1,0 +1,17 @@
+{
+  "name": "Uniqey-Master-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "sequelize": "^3.31.0",
+    "sqlite3": "^3.1.13"
+  }
+}
