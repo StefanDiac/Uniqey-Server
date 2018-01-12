@@ -1,5 +1,6 @@
 var express = require('express');
 var Sequelize = require('sequelize');
+var cors = require('cors');
 var addUIDModule = require('./modules/addUIDModule');
 var displayModule = require('./modules/displayModule');
 var adminModule = require('./modules/adminModule');
@@ -35,6 +36,8 @@ var app = express();
 //app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(cors());
+
 //app.use(express.static('./public'));
 
 var userEmail = null;
@@ -44,4 +47,4 @@ displayModule(app, UIDs);
 addUIDModule(app, UIDs);
 adminModule(app, Users, UIDs);
 
-app.listen(3000);
+app.listen(3505);
